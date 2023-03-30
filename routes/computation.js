@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
-let x=Math.floor(Math.random());
 let y
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  let x=Math.random();
+
     if(req.query.x!=undefined){
         x=req.query.x;
 
